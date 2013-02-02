@@ -9,7 +9,7 @@ Version: 1
 */
 
 // First you want to lay down some SCSS. 
-// Be sure to use '//' comments so they don't compile
+// Be sure to use '//' comments if you don't want them to compile
 
 // Colors
 $primaryColor: #333;
@@ -35,7 +35,6 @@ $secondaryColor: #333;
 @import "globalwp";
 @import "global";
 
-
 /* Ok, this is where the fun starts.
 -------------------------------------------------------------------------------*/
-
+@import "header";

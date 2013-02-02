@@ -20,7 +20,7 @@
 	</div>
 
 	<ol class="commentlist">
-		<?php wp_list_comments('type=comment&callback=themename_comment'); ?>
+		<?php wp_list_comments('type=comment&callback=frankiewp_comment'); ?>
 	</ol>
 
 	<div class="navigation">
@@ -43,7 +43,7 @@
 <?php if ( comments_open() ) : ?>
 
 <div id="respond">
-	<?php include (TEMPLATEPATH . '/_/inc/respond.php' ); ?>
+	<?php include (TEMPLATEPATH . '/inc/respond.php' ); ?>
 </div>
 
 <?php endif; ?>

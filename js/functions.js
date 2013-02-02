@@ -1,23 +1,14 @@
+// If you decide to minify this file then be sure to update the link in functions.php
 // remap jQuery to $
 (function($){})(window.jQuery);
 
-
-/* trigger when page is ready */
 $(document).ready(function (){
 
-	// your functions go here
+	// Toggling mobile menu
+	$('a.navigation-mobile').click(function(){
+		$('#main-navigation').toggleClass("open");
+	}); 
+
+	// Your functions go here
 
 });
-
-
-/* optional triggers
-
-$(window).load(function() {
-	
-});
-
-$(window).resize(function() {
-	
-});
-
-*/

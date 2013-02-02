@@ -1,17 +1,13 @@
-		<footer id="footer">
-			<small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></small>
-		</footer>
+    </div> <!-- end main -->
+</div> <!-- end #page-wrap -->
 
-	</div>
+<footer id="main-footer">
+	<small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></small>
+</footer>
 
-	<?php wp_footer(); ?>
+<?php wp_footer(); ?>
 
-<!-- this is where we put our custom functions -->
-<script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script>
-
-<!-- Asynchronous google analytics; this is the official snippet.
-	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
-	 
+<!-- Asynchronous google analytics. Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.	 
 <script>
 
   var _gaq = _gaq || [];
@@ -28,5 +24,4 @@
 -->
 	
 </body>
-
 </html>

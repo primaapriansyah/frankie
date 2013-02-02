@@ -1,0 +1,27 @@
+@import "global"; 
+
+// For the responsive menu. More styling will be required
+#main-navigation {
+	display: inline-block;
+	overflow: hidden;
+
+	@media screen and (max-width: 900px) {
+		height: 0;
+		display: block;
+		clear: both;	
+	}
+
+	&.open {
+		height: auto;
+	}
+}
+
+a.navigation-mobile {
+	display: none;
+
+	// edit this to the breakpoint when you want the menu to switch
+	@media screen and (max-width: 900px) {
+		display: inline-block;
+	}
+}
+

@@ -11,57 +11,24 @@
 
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
+	<meta name="viewport" content="width=device-width">
 	<?php if (is_search()) { ?>
-	<meta name="robots" content="noindex, nofollow" /> 
+		<meta name="robots" content="noindex, nofollow" /> 
 	<?php } ?>
-
-	<title>
-		   <?php
-		      if (function_exists('is_tag') && is_tag()) {
-		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
-		      elseif (is_archive()) {
-		         wp_title(''); echo ' Archive - '; }
-		      elseif (is_search()) {
-		         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
-		      elseif (!(is_404()) && (is_single()) || (is_page())) {
-		         wp_title(''); echo ' - '; }
-		      elseif (is_404()) {
-		         echo 'Not Found - '; }
-		      if (is_home()) {
-		         bloginfo('name'); echo ' - '; bloginfo('description'); }
-		      else {
-		          bloginfo('name'); }
-		      if ($paged>1) {
-		         echo ' - page '. $paged; }
-		   ?>
-	</title>
 	
-	<meta name="title" content="<?php
-		      if (function_exists('is_tag') && is_tag()) {
-		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
-		      elseif (is_archive()) {
-		         wp_title(''); echo ' Archive - '; }
-		      elseif (is_search()) {
-		         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
-		      elseif (!(is_404()) && (is_single()) || (is_page())) {
-		         wp_title(''); echo ' - '; }
-		      elseif (is_404()) {
-		         echo 'Not Found - '; }
-		      if (is_home()) {
-		         bloginfo('name'); echo ' - '; bloginfo('description'); }
-		      else {
-		          bloginfo('name'); }
-		      if ($paged>1) {
-		         echo ' - page '. $paged; }
-		   ?>">
+	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	
+	<meta name="title" content="<?php wp_title( '|', true, 'right' ); ?>">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
-	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/_/img/favicon.ico">
+	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/ie.css" />
+	<![endif]-->
 	
 	<!-- all our JS is at the bottom of the page, except for Modernizr. This is the uncompress version so make sure to hand roll your own before deploying-->
-	<script src="<?php bloginfo('template_directory'); ?>/_/js/modernizr-2.6.2.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr-2.6.2.js"></script>
 
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
@@ -74,7 +41,13 @@
 	<div id="page-wrap">
 
 		<header id="header">
-			<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-			<div class="description"><?php bloginfo('description'); ?></div>
+			<h1>
+				<a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a>
+			</h1>
+			<a class="navigation-mobile" href="#">Menu &#9776;</a>
+			<nav id="main-navigation" role="navigation">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			</nav>
 		</header>
-
+		
+		<div role="main">
