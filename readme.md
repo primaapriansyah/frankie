@@ -14,7 +14,7 @@ Frankie is a base WordPress theme built on HTML5 and Sass. It's not meant as a p
 - [Normalize](http://necolas.github.com/normalize.css/) CSS reset included (slightly customised)
 - Scripts enqueued through functions.php
 - Latest jQuery
-- _globapwp.scss file for targeting WordPress generated elements
+- _wordpress.scss file for targeting WordPress generated elements
 - Asynchronous Google Analytics script in place (just edit the ID)
 - Not much else.
 
@@ -29,6 +29,7 @@ v1.1
 
 - Documentation update
 - Added screenshot.png
+- Removed compiling comments from _reset.scss
 
 v1.0
 
