@@ -5,7 +5,7 @@ Theme URI: http://website.com.au
 Description: Theme Description.
 Author: Author Name
 Author URI: Author Website
-Version: 1
+Version: 1.0
 */
 
 // First you want to lay down some SCSS. 
@@ -17,24 +17,24 @@ $secondaryColor: #333;
 
 // Fonts
 @mixin p {
-	font-family: Arial, sans-serif; }
+	font-family: Arial, sans-serif; 
+}
 
 @mixin heading {
-	font-family: Arial, sans-serif; }
+	font-family: Arial, sans-serif; 
+}
 
 @mixin meta {
-	font-family: Arial, sans-serif; }
+	font-family: Arial, sans-serif; 
+}
 
 
-/* Going Groundhog Day up in here
--------------------------------------------------------------------------------*/
+// Going Groundhog Day up in here
 @import "reset";
 
-/* Import any partials here
--------------------------------------------------------------------------------*/
-@import "globalwp";
+// Bringing in the base SCSS files
+@import "wordpress";
 @import "global";
 
-/* Ok, this is where the fun starts.
--------------------------------------------------------------------------------*/
+// Ok, this is where the fun starts. Import any partials here
 @import "header";
