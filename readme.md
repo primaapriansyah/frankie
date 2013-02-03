@@ -5,7 +5,7 @@ Frankie is a base WordPress theme built on HTML5 and Sass. It's not meant as a p
 ## Features
 - Responsive base (I suggest adding [Susy](http://susy.oddbird.net/))
 - Includes [Modernizer](http://modernizr.com/) for feature detection and cross-browser compatibility (development version)
-- Mobile-friendly menu
+- Mobile-friendly menu (example at [littlebitnerdy.com](http://littlebitnerdy.com))
 - Wigetized and custom menu ready
 - Preconfigured for Compass (including moving style.css to template root once processed)
 - Custom comments layout (through functions.php) and custom comment form (inc/respond.php)
