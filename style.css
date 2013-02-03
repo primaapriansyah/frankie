@@ -10,32 +10,26 @@ Version: 1.0
 * CSS reset. Slightly modified version of the normalize.css reset - http://github.com/necolas/normalize.css 
 * Modifications by Scott Lyttle
 */
-/* line 6, ../sass/_reset.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
-/* line 11, ../sass/_reset.scss */
 audio, canvas, video {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
 
-/* line 18, ../sass/_reset.scss */
 audio:not([controls]) {
   display: none;
   height: 0; }
 
-/* line 24, ../sass/_reset.scss */
 [hidden] {
   display: none; }
 
-/* line 29, ../sass/_reset.scss */
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-/* line 40, ../sass/_reset.scss */
 html,
 button,
 input,
@@ -43,299 +37,236 @@ select,
 textarea {
   font-family: sans-serif; }
 
-/* line 45, ../sass/_reset.scss */
 body {
   margin: 0; }
 
-/* line 51, ../sass/_reset.scss */
 a:focus {
   outline: thin dotted; }
 
-/* line 57, ../sass/_reset.scss */
 a:hover,
 a:active {
   outline: 0; }
 
-/* line 62, ../sass/_reset.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
-/* line 67, ../sass/_reset.scss */
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0; }
 
-/* line 72, ../sass/_reset.scss */
 h3 {
   font-size: 1.17em;
   margin: 1em 0; }
 
-/* line 77, ../sass/_reset.scss */
 h4 {
   font-size: 1em;
   margin: 1.33em 0; }
 
-/* line 82, ../sass/_reset.scss */
 h5 {
   font-size: 0.83em;
   margin: 1.67em 0; }
 
-/* line 87, ../sass/_reset.scss */
 h6 {
   font-size: 0.75em;
   margin: 2.33em 0; }
 
-/* line 93, ../sass/_reset.scss */
 abbr[title] {
   border-bottom: 1px dotted; }
 
-/* line 98, ../sass/_reset.scss */
 b, strong {
   font-weight: bold; }
 
-/* line 102, ../sass/_reset.scss */
 blockquote {
   margin: 1em 40px; }
 
-/* line 107, ../sass/_reset.scss */
 dfn {
   font-style: italic; }
 
-/* line 112, ../sass/_reset.scss */
 mark {
   background: #ff0;
   color: #000; }
 
-/* line 118, ../sass/_reset.scss */
 p, pre {
   margin: 1em 0; }
 
-/* line 123, ../sass/_reset.scss */
 pre, code, kbd, samp {
   font-family: monospace, serif;
   _font-family: "courier new", monospace;
   font-size: 1em; }
 
-/* line 130, ../sass/_reset.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word; }
 
-/* line 137, ../sass/_reset.scss */
 q {
   quotes: none; }
 
-/* line 142, ../sass/_reset.scss */
 q:before, q:after {
   content: '';
   content: none; }
 
-/* line 147, ../sass/_reset.scss */
 small {
   font-size: 75%; }
 
-/* line 152, ../sass/_reset.scss */
 sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline; }
 
-/* line 159, ../sass/_reset.scss */
 sup {
   top: -0.5em; }
 
-/* line 163, ../sass/_reset.scss */
 sub {
   bottom: -0.25em; }
 
-/* line 169, ../sass/_reset.scss */
 dl, menu, ol, ul {
   margin: 1em 0; }
 
-/* line 173, ../sass/_reset.scss */
 dd {
   margin: 0 0 0 40px; }
 
-/* line 178, ../sass/_reset.scss */
 menu, ol, ul {
   padding: 0 0 0 40px; }
 
-/* line 183, ../sass/_reset.scss */
 nav ul, nav ol {
   list-style: none;
   list-style-image: none; }
 
-/* line 190, ../sass/_reset.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic; }
 
-/* line 195, ../sass/_reset.scss */
 svg:not(:root) {
   overflow: hidden; }
 
-/* line 201, ../sass/_reset.scss */
 figure {
   margin: 0; }
 
-/* line 207, ../sass/_reset.scss */
 form {
   margin: 0; }
 
-/* line 212, ../sass/_reset.scss */
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
-/* line 221, ../sass/_reset.scss */
 legend {
   border: 0;
   padding: 0;
   white-space: normal;
   *margin-left: -7px; }
 
-/* line 231, ../sass/_reset.scss */
 button, input, select, textarea {
   font-size: 100%;
   margin: 0;
   vertical-align: baseline;
   *vertical-align: middle; }
 
-/* line 239, ../sass/_reset.scss */
 button, input {
   line-height: normal; }
 
-/* line 247, ../sass/_reset.scss */
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button;
   *overflow: visible; }
 
-/* line 254, ../sass/_reset.scss */
 button[disabled], input[disabled] {
   cursor: default; }
 
-/* line 262, ../sass/_reset.scss */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
   *height: 13px;
   *width: 13px; }
 
-/* line 271, ../sass/_reset.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
-/* line 279, ../sass/_reset.scss */
 input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none; }
 
-/* line 284, ../sass/_reset.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-/* line 291, ../sass/_reset.scss */
 textarea {
   overflow: auto;
   vertical-align: top; }
 
-/* line 298, ../sass/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 23, ../sass/_wordpress.scss */
 ol.commentlist {
   list-style: none; }
 
-/* line 29, ../sass/_wordpress.scss */
 ol.commentlist li.comment {
   border-bottom: 1px dotted #666666;
   padding: 10px; }
 
-/* line 32, ../sass/_wordpress.scss */
 ol.commentlist li.comment div.vcard cite.fn {
   font-style: normal; }
 
-/* line 34, ../sass/_wordpress.scss */
 ol.commentlist li.comment div.vcard img.avatar {
   float: right;
   margin: 0 0 10px 10px; }
 
-/* line 39, ../sass/_wordpress.scss */
 ol.commentlist li.comment div.comment-meta {
   font-size: 10px; }
 
-/* line 40, ../sass/_wordpress.scss */
 ol.commentlist li.comment div.comment-meta a {
   color: #ccc; }
 
-/* line 43, ../sass/_wordpress.scss */
 ol.commentlist li.comment div.reply {
   font-size: 11px; }
 
-/* line 44, ../sass/_wordpress.scss */
 ol.commentlist li.comment div.reply a {
   font-weight: bold; }
 
-/* line 45, ../sass/_wordpress.scss */
 ol.commentlist li.comment ul.children {
   list-style: none;
   margin: 10px 0 0; }
 
-/* line 52, ../sass/_wordpress.scss */
 ol.commentlist li.comment ul.children li.depth-2 {
   border-left: 5px solid #555555;
   margin: 0 0 10px 10px; }
 
-/* line 53, ../sass/_wordpress.scss */
 ol.commentlist li.comment ul.children li.depth-3 {
   border-left: 5px solid #999999;
   margin: 0 0 10px 10px; }
 
-/* line 54, ../sass/_wordpress.scss */
 ol.commentlist li.comment ul.children li.depth-4 {
   border-left: 5px solid #bbbbbb;
   margin: 0 0 10px 10px; }
 
-/* line 57, ../sass/_wordpress.scss */
 ol.commentlist li.even {
   background: #fff; }
 
-/* line 58, ../sass/_wordpress.scss */
 ol.commentlist li.odd {
   background: #f6f6f6; }
 
-/* line 59, ../sass/_wordpress.scss */
 ol.commentlist li.parent {
   border-left: 5px solid #111111; }
 
-/* line 4, ../sass/_header.scss */
 #main-navigation {
   display: inline-block;
   overflow: hidden; }
   @media screen and (max-width: 900px) {
-    /* line 4, ../sass/_header.scss */
     #main-navigation {
       height: 0;
       display: block;
       clear: both; } }
-  /* line 14, ../sass/_header.scss */
   #main-navigation.open {
     height: auto; }
 
-/* line 19, ../sass/_header.scss */
 a.navigation-mobile {
   display: none; }
   @media screen and (max-width: 900px) {
-    /* line 19, ../sass/_header.scss */
     a.navigation-mobile {
       display: inline-block; } }
