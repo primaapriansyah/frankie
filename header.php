@@ -27,7 +27,7 @@
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/ie.css" />
 	<![endif]-->
 	
-	<!-- all our JS is at the bottom of the page, except for Modernizr. This is the uncompress version so make sure to hand roll your own before deploying-->
+	<!-- all our JS is at the bottom of the page, except for Modernizr. This is the uncompressed version so make sure to hand roll your own before deploying-->
 	<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr-2.6.2.js"></script>
 
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>

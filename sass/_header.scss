@@ -1,16 +1,77 @@
 @import "global"; 
 
 // For the responsive menu. More styling will be required
-#main-navigation {
-	display: inline-block;
+#header {
+	position: relative;
 	overflow: hidden;
 
-	@media screen and (max-width: 900px) {
+	h1 {
+		float: left;
+		display: inline-block;
+		margin: 0;
+	}
+}
+
+#main-navigation {
+	display: inline-block;
+	float: right;
+	overflow: hidden;
+	
+	ul {
+		padding: 0; margin: 0;
+		
+		li {
+			float: left;
+			display: inline-block;
+			list-style-type: none;
+			
+			&:nth-child(even) {
+					
+					a {
+						@include break(tablet) {
+							background: #efefef;
+						}	
+					}
+				}
+			
+			a {
+				margin: 0 30px 0 0;
+				opacity: 1;
+				color: black;
+
+				@include break(tablet) {
+					display: block;
+					background: #f7f7f7;
+					padding: 5px 15px;	
+					float: none;
+					margin-right: 0;
+				}
+				
+				&:hover {
+					@include break(tablet) {
+						background: #cdcdcd;
+					}
+				}
+			}
+			
+			&:last-child a {
+				margin-right: 0;
+			}
+			
+			@include break(tablet) {
+				float: none;
+				display: block;
+			}	
+		}
+	}
+	
+	@include break(tablet) {
 		height: 0;
+		float: none;
 		display: block;
 		clear: both;	
 	}
-
+	
 	&.open {
 		height: auto;
 	}
@@ -18,9 +79,12 @@
 
 a.navigation-mobile {
 	display: none;
+	float: right;
+	opacity: 1;
+	color: black;
+	margin-top: 4px;
 
-	// edit this to the breakpoint when you want the menu to switch
-	@media screen and (max-width: 900px) {
+	@include break(tablet) {
 		display: inline-block;
 	}
 }

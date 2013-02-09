@@ -1,1 +1,24 @@
-// Enter your variables and global styles here. Make sure to put '@import "global";' at the top of every file that needs it
+// Variables
+
+
+// Mixins for responsive breakpoints
+@mixin break($point) {
+  @if $point == laptop {
+    @media (max-width: 1100px) { @content; }
+  }
+  @else if $point == tablet {
+    @media (max-width: 900px) { @content; }
+  }
+  @else if $point == phone {
+    @media (max-width: 480px)  { @content; }
+  }
+}
+
+// Global Layouts
+#page-wrap {
+	width: 90%;
+	max-width: 1100px;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+}

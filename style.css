@@ -203,6 +203,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+#page-wrap {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative; }
+
 ol.commentlist {
   list-style: none; }
 
@@ -254,19 +261,77 @@ ol.commentlist li.odd {
 ol.commentlist li.parent {
   border-left: 5px solid #111111; }
 
+#page-wrap {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative; }
+
+#page-wrap {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative; }
+
+#header {
+  position: relative;
+  overflow: hidden; }
+  #header h1 {
+    float: left;
+    display: inline-block;
+    margin: 0; }
+
 #main-navigation {
   display: inline-block;
+  float: right;
   overflow: hidden; }
-  @media screen and (max-width: 900px) {
+  #main-navigation ul {
+    padding: 0;
+    margin: 0; }
+    #main-navigation ul li {
+      float: left;
+      display: inline-block;
+      list-style-type: none; }
+      @media (max-width: 900px) {
+        #main-navigation ul li:nth-child(even) a {
+          background: #efefef; } }
+      #main-navigation ul li a {
+        margin: 0 30px 0 0;
+        opacity: 1;
+        color: black; }
+        @media (max-width: 900px) {
+          #main-navigation ul li a {
+            display: block;
+            background: #f7f7f7;
+            padding: 5px 15px;
+            float: none;
+            margin-right: 0; } }
+        @media (max-width: 900px) {
+          #main-navigation ul li a:hover {
+            background: #cdcdcd; } }
+      #main-navigation ul li:last-child a {
+        margin-right: 0; }
+      @media (max-width: 900px) {
+        #main-navigation ul li {
+          float: none;
+          display: block; } }
+  @media (max-width: 900px) {
     #main-navigation {
       height: 0;
+      float: none;
       display: block;
       clear: both; } }
   #main-navigation.open {
     height: auto; }
 
 a.navigation-mobile {
-  display: none; }
-  @media screen and (max-width: 900px) {
+  display: none;
+  float: right;
+  opacity: 1;
+  color: black;
+  margin-top: 4px; }
+  @media (max-width: 900px) {
     a.navigation-mobile {
       display: inline-block; } }
